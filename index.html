@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Abogado - Christian García</title>
+  </head>
+
+  <body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>/CG/</h1>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MÍ</a>
+                </li>
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)"
+                    >PORTAFOLIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Icono del menú responsive -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2>
+            Soy <span>Christian García</span>, Abogado especializado en Derecho
+            Penal
+          </h2>
+          <p class="descripcion">
+            Abogado con más de 10 años de experiencia en asesoría legal y
+            representación en juicios penales.
+          </p>
+          <a href="#portfolio">Ver Mis Casos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MÍ -->
+    <section id="sobremi">
+      <div style="display: flex; justify-content: center; margin-bottom: 30px">
+        <img src="img/photo.png" alt="" style="width: 400px; height: 400px" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mí</p>
+        <h2>Hola, Soy <span>Christian García</span></h2>
+        <h3>Abogado especializado en Derecho Penal</h3>
+        <p>
+          Con una trayectoria de más de 10 años en el ámbito jurídico, me he
+          especializado en la defensa de derechos de mis clientes en casos
+          penales. Mi misión es ofrecer un servicio legal de alta calidad, con
+          un enfoque personalizado y efectivo.
+        </p>
+        <p>
+          Mi experiencia incluye la asesoría en procesos judiciales, la defensa
+          ante tribunales y la resolución de conflictos, siempre con el
+          compromiso de proteger los derechos fundamentales de cada cliente.
+        </p>
+        <a href="#">Descargar CV</a>
+      </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+      <h3 class="titulo-seccion">MIS SERVICIOS LEGALES</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-gavel"></i></span>
+          <h4>Defensa Penal</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Delitos</li>
+            <li>Defensa en Juicio</li>
+            <li>Asesoría Jurídica</li>
+          </ul>
+          <p>
+            Defensa efectiva en casos penales, asesoría legal y representación
+            ante tribunales para proteger tus derechos.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-balance-scale"></i></span>
+          <h4>Asesoría en Derecho Familiar</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Divorcios</li>
+            <li>Custodia</li>
+            <li>Paternidad</li>
+          </ul>
+          <p>
+            Asesoría legal en casos de divorcios, disputas por la custodia de
+            los hijos y otros asuntos familiares.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-user-shield"></i></span>
+          <h4>Defensa de Derechos Humanos</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Derechos Humanos</li>
+            <li>Libertad Personal</li>
+            <li>Derechos Fundamentales</li>
+          </ul>
+          <p>
+            Defensa de los derechos humanos de los individuos en casos de abuso
+            de autoridad y violaciones de derechos fundamentales.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+      <h3>HABILIDADES</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Derecho Penal</p>
+          <span class="porcentaje">95%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="html"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Litigación</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="js"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Derecho Familiar</p>
+          <span class="porcentaje">85%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="bd"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">Mis Casos Recientes</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto1.png" alt="" />
+          <div class="info">
+            <h4>Caso Penal</h4>
+            <p>Defensa en Delito de Robo</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto2.jpeg" alt="" />
+          <div class="info">
+            <h4>Caso Familiar</h4>
+            <p>Custodia de Menores</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto3.jpeg" alt="" />
+          <div class="info">
+            <h4>Caso de Derechos Humanos</h4>
+            <p>Violación de Derechos Fundamentales</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contactanos ahora</h3>
+      <div class="contenedor-form">
+        <form action="">
+          <div class="fila mitad">
+            <input
+              type="text"
+              placeholder="Nombre Completo *"
+              class="input-mitad"
+            />
+            <input
+              type="email"
+              placeholder="Dirección de Email"
+              class="input-mitad"
+            />
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Tema..." class="input-full" />
+          </div>
+          <div class="fila">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Tu Mensaje..."
+              class="input-full"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+      <p>&copy; 2023 Christian García. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
