@@ -56,7 +56,7 @@ Este proyecto fue creado con fines de aprendizaje y demostración. Muestra cómo
 
 ## Vista Previa
 
-Puedes ver el proyecto en funcionamiento en [Github Pages](https://jordanroberto74.github.io/the_gym/).
+Puedes ver el proyecto en funcionamiento en [Github Pages](https://jordanroberto74.github.io/christian-garcia-abg/).
 
 ## Contacto
 
