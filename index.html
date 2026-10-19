@@ -2,257 +2,654 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1526" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 user-scalable=no"
+      name="description"
+      content="Christian García, abogado penalista con más de 10 años de experiencia. Defensa penal estratégica, derecho familiar y derechos humanos. Consulta confidencial."
     />
+    <meta name="author" content="Christian García" />
+    <link rel="canonical" href="https://jordanroberto74.github.io/christian-garcia-abg/" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Christian García — Abogado Penalista" />
+    <meta property="og:title" content="Christian García — Abogado Penalista" />
+    <meta
+      property="og:description"
+      content="Defensa penal estratégica, derecho familiar y derechos humanos. Más de 10 años de experiencia y absoluta confidencialidad."
+    />
+    <meta property="og:url" content="https://jordanroberto74.github.io/christian-garcia-abg/" />
+    <meta property="og:image" content="https://jordanroberto74.github.io/christian-garcia-abg/img/photo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Christian García — Abogado Penalista" />
+    <meta
+      name="twitter:description"
+      content="Defensa penal estratégica, derecho familiar y derechos humanos. Más de 10 años de experiencia."
+    />
+
+    <title>Christian García — Abogado Penalista</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="estilo.css" />
-    <title>Abogado - Christian García</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Attorney",
+        "name": "Christian García",
+        "description": "Abogado penalista con más de 10 años de experiencia en defensa penal, derecho familiar y derechos humanos.",
+        "url": "https://jordanroberto74.github.io/christian-garcia-abg/",
+        "image": "https://jordanroberto74.github.io/christian-garcia-abg/img/photo.png",
+        "areaServed": "Bolivia",
+        "knowsLanguage": ["es"],
+        "knowsAbout": ["Derecho Penal", "Derecho Familiar", "Derechos Humanos"],
+        "telephone": "+591 700 00000",
+        "email": "contacto@cgabogados.demo",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Principal #123",
+          "addressLocality": "Santa Cruz de la Sierra",
+          "addressCountry": "BO"
+        }
+      }
+    </script>
   </head>
 
   <body>
-    <!-- SECCION INICIO -->
-    <section id="inicio">
-      <div class="contenido">
-        <header>
-          <div class="contenido-header">
-            <h1>/CG/</h1>
-            <nav id="nav" class="">
-              <ul id="links">
-                <li>
-                  <a
-                    href="#inicio"
-                    class="seleccionado"
-                    onclick="seleccionar(this)"
-                    >INICIO</a
-                  >
-                </li>
-                <li>
-                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MÍ</a>
-                </li>
-                <li>
-                  <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
-                </li>
-                <li>
-                  <a href="#portfolio" onclick="seleccionar(this)"
-                    >PORTAFOLIO</a
-                  >
-                </li>
-                <li>
-                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
-                </li>
-              </ul>
-            </nav>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-            <!-- Icono del menú responsive -->
-            <div id="icono-nav" onclick="responsiveMenu()">
-              <i class="fa-solid fa-bars"></i>
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="#inicio" aria-label="Christian García, inicio">
+          <span class="brand__mark" aria-hidden="true">CG</span>
+          <span class="brand__name">
+            Christian García
+            <span class="brand__tag">Abogado penalista</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primary-nav" aria-label="Navegación principal">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#inicio">Inicio</a></li>
+            <li><a class="nav__link" href="#areas">Áreas</a></li>
+            <li><a class="nav__link" href="#sobre-mi">Sobre mí</a></li>
+            <li><a class="nav__link" href="#proceso">Proceso</a></li>
+            <li><a class="nav__link" href="#faq">FAQ</a></li>
+            <li>
+              <a class="btn btn--primary btn--sm header__cta" href="#contacto">Agendar consulta</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Abrir menú de navegación"
+        >
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- ============ HERO ============ -->
+      <section id="inicio" class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="hero__eyebrow">Defensa penal · Bolivia</p>
+            <h1 class="hero__title" id="hero-title">
+              Christian García, <em>abogado penalista</em>
+            </h1>
+            <p class="hero__lead">
+              Defiendo a personas y familias en procesos penales con más de 10 años de
+              experiencia, estrategia personalizada y absoluta confidencialidad.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contacto">Agendar consulta</a>
+              <a class="btn btn--ghost" href="#areas">Ver áreas de práctica</a>
+            </div>
+            <ul class="hero__meta" aria-label="Datos de trayectoria">
+              <li class="hero__meta-item">
+                <span class="hero__meta-value">10+</span>
+                <span class="hero__meta-label">Años de experiencia</span>
+              </li>
+              <li class="hero__meta-item">
+                <span class="hero__meta-value">300+</span>
+                <span class="hero__meta-label">Casos atendidos</span>
+              </li>
+              <li class="hero__meta-item">
+                <span class="hero__meta-value">24/7</span>
+                <span class="hero__meta-label">Disponibilidad</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__portrait">
+            <picture>
+              <source srcset="img/photo.webp" type="image/webp" />
+              <img
+                src="img/photo.png"
+                alt="Retrato de Christian García, abogado penalista"
+                width="500"
+                height="500"
+                fetchpriority="high"
+              />
+            </picture>
+            <div class="hero__badge">
+              <strong>10+</strong>
+              <span>Años defendiendo</span>
             </div>
           </div>
-        </header>
-        <div class="presentacion">
-          <p class="bienvenida">Bienvenidos</p>
-          <h2>
-            Soy <span>Christian García</span>, Abogado especializado en Derecho
-            Penal
-          </h2>
-          <p class="descripcion">
-            Abogado con más de 10 años de experiencia en asesoría legal y
-            representación en juicios penales.
-          </p>
-          <a href="#portfolio">Ver Mis Casos</a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SECCION SOBRE MÍ -->
-    <section id="sobremi">
-      <div style="display: flex; justify-content: center; margin-bottom: 30px">
-        <img src="img/photo.png" alt="" style="width: 400px; height: 400px" />
-      </div>
-      <div class="sobremi">
-        <p class="titulo-seccion">Sobre Mí</p>
-        <h2>Hola, Soy <span>Christian García</span></h2>
-        <h3>Abogado especializado en Derecho Penal</h3>
-        <p>
-          Con una trayectoria de más de 10 años en el ámbito jurídico, me he
-          especializado en la defensa de derechos de mis clientes en casos
-          penales. Mi misión es ofrecer un servicio legal de alta calidad, con
-          un enfoque personalizado y efectivo.
-        </p>
-        <p>
-          Mi experiencia incluye la asesoría en procesos judiciales, la defensa
-          ante tribunales y la resolución de conflictos, siempre con el
-          compromiso de proteger los derechos fundamentales de cada cliente.
-        </p>
-        <a href="#">Descargar CV</a>
-      </div>
-    </section>
-
-    <!-- SECCION SERVICIOS -->
-    <section id="servicios">
-      <h3 class="titulo-seccion">MIS SERVICIOS LEGALES</h3>
-      <div class="fila">
-        <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-gavel"></i></span>
-          <h4>Defensa Penal</h4>
-          <hr />
-          <ul class="servicios-tag">
-            <li>Delitos</li>
-            <li>Defensa en Juicio</li>
-            <li>Asesoría Jurídica</li>
+      <!-- ============ TRUST ============ -->
+      <div class="trust" aria-label="Indicadores de confianza">
+        <div class="container">
+          <ul class="trust__grid">
+            <li class="stat">
+              <span class="stat__value" data-count="10" data-suffix="+">10+</span>
+              <span class="stat__label">Años de experiencia</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value" data-count="300" data-suffix="+">300+</span>
+              <span class="stat__label">Casos atendidos</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value">24/7</span>
+              <span class="stat__label">Disponibilidad</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value" data-count="100" data-suffix="%">100%</span>
+              <span class="stat__label">Confidencialidad</span>
+            </li>
           </ul>
-          <p>
-            Defensa efectiva en casos penales, asesoría legal y representación
-            ante tribunales para proteger tus derechos.
-          </p>
-        </div>
-        <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-balance-scale"></i></span>
-          <h4>Asesoría en Derecho Familiar</h4>
-          <hr />
-          <ul class="servicios-tag">
-            <li>Divorcios</li>
-            <li>Custodia</li>
-            <li>Paternidad</li>
-          </ul>
-          <p>
-            Asesoría legal en casos de divorcios, disputas por la custodia de
-            los hijos y otros asuntos familiares.
-          </p>
-        </div>
-        <div class="servicio">
-          <span class="icono"><i class="fa-solid fa-user-shield"></i></span>
-          <h4>Defensa de Derechos Humanos</h4>
-          <hr />
-          <ul class="servicios-tag">
-            <li>Derechos Humanos</li>
-            <li>Libertad Personal</li>
-            <li>Derechos Fundamentales</li>
-          </ul>
-          <p>
-            Defensa de los derechos humanos de los individuos en casos de abuso
-            de autoridad y violaciones de derechos fundamentales.
-          </p>
         </div>
       </div>
-    </section>
 
-    <!-- SECCION H A B I L I D A D E S -->
-    <div class="contenedor-skills" id="skills">
-      <h3>HABILIDADES</h3>
-      <div class="skill">
-        <div class="info">
-          <p><span class="lista"> </span>Derecho Penal</p>
-          <span class="porcentaje">95%</span>
+      <!-- ============ ÁREAS ============ -->
+      <section id="areas" class="section" aria-labelledby="areas-title">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Áreas de práctica</p>
+            <h2 class="section-title" id="areas-title">Defensa a medida para cada caso</h2>
+            <p class="section-lead">
+              Trabajo con un enfoque estratégico y personalizado, priorizando siempre
+              la protección de tus derechos y tu tranquilidad.
+            </p>
+          </div>
+
+          <div class="cards">
+            <article class="card reveal">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <h3 class="card__title">Defensa Penal</h3>
+              <p class="card__text">
+                Representación y defensa técnica en todas las etapas del proceso penal.
+              </p>
+              <ul class="card__list">
+                <li>Delitos contra la propiedad</li>
+                <li>Defensa en juicio oral</li>
+                <li>Medidas cautelares y libertad</li>
+              </ul>
+              <a class="card__link" href="#contacto">
+                Consultar caso
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </article>
+
+            <article class="card reveal">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              <h3 class="card__title">Derecho Familiar</h3>
+              <p class="card__text">
+                Acompañamiento legal sensible en los momentos más importantes de tu familia.
+              </p>
+              <ul class="card__list">
+                <li>Divorcios y separaciones</li>
+                <li>Custodia de menores</li>
+                <li>Pensiones alimenticias</li>
+              </ul>
+              <a class="card__link" href="#contacto">
+                Consultar caso
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </article>
+
+            <article class="card reveal">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M7 7l-3 7h6l-3-7z"/><path d="M17 7l-3 7h6l-3-7z"/><path d="M8 21h8"/></svg>
+              </span>
+              <h3 class="card__title">Derechos Humanos</h3>
+              <p class="card__text">
+                Defensa de garantías fundamentales frente a abusos de autoridad.
+              </p>
+              <ul class="card__list">
+                <li>Libertad personal</li>
+                <li>Debido proceso</li>
+                <li>Amparo constitucional</li>
+              </ul>
+              <a class="card__link" href="#contacto">
+                Consultar caso
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SOBRE MÍ ============ -->
+      <section id="sobre-mi" class="section section--warm" aria-labelledby="about-title">
+        <div class="container about">
+          <div class="about__media reveal">
+            <picture>
+              <source srcset="img/photo.webp" type="image/webp" />
+              <img
+                src="img/photo.png"
+                alt="Christian García en su despacho"
+                width="500"
+                height="500"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="about__content reveal">
+            <div class="section-head">
+              <p class="eyebrow">Sobre mí</p>
+              <h2 class="section-title" id="about-title">
+                Más de una década defendiendo lo que importa
+              </h2>
+            </div>
+            <p>
+              Soy Christian García, abogado especializado en derecho penal. A lo largo de
+              mi trayectoria he acompañado a personas y familias en algunos de los
+              momentos más difíciles de sus vidas, siempre con un enfoque humano,
+              estratégico y riguroso.
+            </p>
+            <p>
+              Mi compromiso es simple: escuchar tu caso con atención, explicarte cada paso
+              con claridad y defender tus derechos con la máxima diligencia.
+            </p>
+
+            <ul class="credentials">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Abogado en Derecho, Universidad Mayor de San Andrés
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Especialización en Derecho Penal y Procesal Penal
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Colegiatura vigente y formación continua
+              </li>
+            </ul>
+
+            <p class="about__sign">Christian García</p>
+
+            <div>
+              <a class="btn btn--dark" href="#contacto">Agendar una consulta</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROCESO ============ -->
+      <section id="proceso" class="section section--dark process" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-head section-head--center reveal">
+            <p class="eyebrow">Cómo trabajo</p>
+            <h2 class="section-title" id="process-title">Un proceso claro, sin sorpresas</h2>
+            <p class="section-lead">
+              Desde la primera conversación hasta la resolución, sabrás siempre en qué
+              etapa estás y qué sigue.
+            </p>
+          </div>
+
+          <ol class="process__list">
+            <li class="step reveal">
+              <span class="step__index" aria-hidden="true">1</span>
+              <h3 class="step__title">Evaluación inicial</h3>
+              <p class="step__text">
+                Escucho tu caso, reviso los antecedentes y analizo la viabilidad legal.
+              </p>
+            </li>
+            <li class="step reveal">
+              <span class="step__index" aria-hidden="true">2</span>
+              <h3 class="step__title">Estrategia legal</h3>
+              <p class="step__text">
+                Diseñamos una defensa a medida según los hechos y el contexto del caso.
+              </p>
+            </li>
+            <li class="step reveal">
+              <span class="step__index" aria-hidden="true">3</span>
+              <h3 class="step__title">Representación</h3>
+              <p class="step__text">
+                Te acompaño en cada audiencia, trámite y etapa del proceso penal.
+              </p>
+            </li>
+            <li class="step reveal">
+              <span class="step__index" aria-hidden="true">4</span>
+              <h3 class="step__title">Resolución</h3>
+              <p class="step__text">
+                Buscamos la mejor salida posible y te explico los siguientes pasos.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ RESULTADOS / TESTIMONIOS ============ -->
+      <section id="resultados" class="section" aria-labelledby="results-title">
+        <div class="container">
+          <div class="section-head section-head--center reveal">
+            <p class="eyebrow">Resultados</p>
+            <h2 class="section-title" id="results-title">Confianza que se gana caso a caso</h2>
+            <p class="section-lead">
+              Testimonios ilustrativos de un sitio demostrativo, redactados para mostrar
+              el tipo de acompañamiento que brinda el despacho.
+            </p>
+          </div>
+
+          <div class="testimonials">
+            <figure class="testimonial reveal">
+              <blockquote class="testimonial__quote">
+                “Logró la libertad de mi hermano en un caso complejo. Su estrategia y su
+                trato humano marcaron la diferencia.”
+              </blockquote>
+              <figcaption class="testimonial__meta">
+                <span class="testimonial__avatar" aria-hidden="true">RM</span>
+                <span>
+                  <span class="testimonial__name">R. Mendoza</span>
+                  <span class="testimonial__role">Caso penal</span>
+                </span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial reveal">
+              <blockquote class="testimonial__quote">
+                “Siempre claro, siempre disponible. Me explicó cada paso del proceso y me
+                acompañó hasta el final.”
+              </blockquote>
+              <figcaption class="testimonial__meta">
+                <span class="testimonial__avatar" aria-hidden="true">LQ</span>
+                <span>
+                  <span class="testimonial__name">L. Quispe</span>
+                  <span class="testimonial__role">Caso familiar</span>
+                </span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial reveal">
+              <blockquote class="testimonial__quote">
+                “Un profesional íntegro. Mi caso se resolvió de la mejor manera posible y
+                con total transparencia.”
+              </blockquote>
+              <figcaption class="testimonial__meta">
+                <span class="testimonial__avatar" aria-hidden="true">AR</span>
+                <span>
+                  <span class="testimonial__name">A. Rojas</span>
+                  <span class="testimonial__role">Derechos humanos</span>
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section id="faq" class="section section--warm" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="section-head section-head--center reveal">
+            <p class="eyebrow">Preguntas frecuentes</p>
+            <h2 class="section-title" id="faq-title">Antes de dar el primer paso</h2>
+          </div>
+
+          <div class="faq">
+            <details class="faq__item reveal">
+              <summary class="faq__q">¿La primera consulta tiene costo?</summary>
+              <div class="faq__a">
+                La primera evaluación es gratuita y sin compromiso. En ella analizamos tu
+                caso y te explicamos las alternativas reales.
+              </div>
+            </details>
+
+            <details class="faq__item reveal">
+              <summary class="faq__q">¿Qué documentos debo llevar a la primera reunión?</summary>
+              <div class="faq__a">
+                Toda la documentación relacionada con tu caso: denuncias, citaciones,
+                resoluciones, contratos o cualquier prueba que consideres relevante.
+              </div>
+            </details>
+
+            <details class="faq__item reveal">
+              <summary class="faq__q">¿Cuánto tiempo puede durar un proceso penal?</summary>
+              <div class="faq__a">
+                Depende de la complejidad y de la etapa procesal. En la evaluación inicial
+                te daremos un panorama realista según tu situación.
+              </div>
+            </details>
+
+            <details class="faq__item reveal">
+              <summary class="faq__q">¿Atienden casos en otras ciudades?</summary>
+              <div class="faq__a">
+                Sí. Podemos coordinar reuniones presenciales o virtuales según la
+                ubicación y las necesidades del caso.
+              </div>
+            </details>
+
+            <details class="faq__item reveal">
+              <summary class="faq__q">¿La información que comparta es confidencial?</summary>
+              <div class="faq__a">
+                Absolutamente. Toda la información que compartas está protegida por el
+                secreto profesional y se trata con la máxima reserva.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACTO ============ -->
+      <section id="contacto" class="section" aria-labelledby="contact-title">
+        <div class="container contact">
+          <div class="reveal">
+            <div class="section-head">
+              <p class="eyebrow">Contacto</p>
+              <h2 class="section-title" id="contact-title">Cuéntame tu caso</h2>
+              <p class="section-lead">
+                Completa el formulario y te responderemos en un plazo de 24 horas hábiles.
+                Tu consulta es confidencial.
+              </p>
+            </div>
+
+            <form class="contact__form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label class="field__label" for="nombre">Nombre completo</label>
+                  <input
+                    class="field__input"
+                    id="nombre"
+                    name="nombre"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Tu nombre"
+                    required
+                  />
+                  <span class="field__error" data-error-for="nombre" aria-live="polite"></span>
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="email">Correo electrónico</label>
+                  <input
+                    class="field__input"
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="tu@correo.com"
+                    required
+                  />
+                  <span class="field__error" data-error-for="email" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label class="field__label" for="telefono">Teléfono (opcional)</label>
+                  <input
+                    class="field__input"
+                    id="telefono"
+                    name="telefono"
+                    type="tel"
+                    autocomplete="tel"
+                    placeholder="+591 700 00000"
+                  />
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="tipo">Tipo de caso</label>
+                  <select class="field__input" id="tipo" name="tipo" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="penal">Defensa penal</option>
+                    <option value="familiar">Derecho familiar</option>
+                    <option value="derechos-humanos">Derechos humanos</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <span class="field__error" data-error-for="tipo" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="mensaje">Mensaje</label>
+                <textarea
+                  class="field__input"
+                  id="mensaje"
+                  name="mensaje"
+                  rows="5"
+                  placeholder="Describe brevemente tu situación..."
+                  required
+                ></textarea>
+                <span class="field__error" data-error-for="mensaje" aria-live="polite"></span>
+              </div>
+
+              <div>
+                <button class="btn btn--primary" type="submit">Solicitar evaluación</button>
+              </div>
+
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <aside class="contact__info reveal" aria-label="Datos de contacto">
+            <div class="info-block">
+              <span class="info-block__label">WhatsApp</span>
+              <a class="info-block__value" href="https://wa.me/59170000000" target="_blank" rel="noopener">+591 700 00000</a>
+              <span class="info-block__note">Respuesta en horario laboral</span>
+            </div>
+
+            <div class="info-block">
+              <span class="info-block__label">Correo</span>
+              <a class="info-block__value" href="mailto:contacto@cgabogados.demo">contacto@cgabogados.demo</a>
+              <span class="info-block__note">Respuesta en 24 h hábiles</span>
+            </div>
+
+            <div class="info-block">
+              <span class="info-block__label">Oficina</span>
+              <span class="info-block__value">Av. Principal #123</span>
+              <span class="info-block__note">Santa Cruz de la Sierra, Bolivia</span>
+            </div>
+
+            <div class="info-block">
+              <span class="info-block__label">Horario</span>
+              <span class="info-block__value">Lun–Vie · 9:00–18:00</span>
+              <span class="info-block__note">Atención de urgencias 24/7</span>
+            </div>
+
+            <p class="info-block__note">
+              Sitio demostrativo: los datos de contacto son ficticios.
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a class="brand" href="#inicio" aria-label="Christian García, inicio">
+              <span class="brand__mark" aria-hidden="true">CG</span>
+              <span class="brand__name">
+                Christian García
+                <span class="brand__tag">Abogado penalista</span>
+              </span>
+            </a>
+            <p>
+              Defensa penal estratégica, derecho familiar y derechos humanos. Atención
+              personalizada y confidencial.
+            </p>
+            <div class="social" aria-label="Redes sociales">
+              <a href="#" aria-label="LinkedIn (demostrativo)">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.1c0-1.7-.03-3.9-2.37-3.9-2.37 0-2.73 1.85-2.73 3.77V24h-4V8z"/></svg>
+              </a>
+              <a href="#" aria-label="Instagram (demostrativo)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="mailto:contacto@cgabogados.demo" aria-label="Correo electrónico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <p class="footer__col-title">Navegación</p>
+            <nav class="footer__nav" aria-label="Navegación del pie">
+              <a href="#inicio">Inicio</a>
+              <a href="#areas">Áreas de práctica</a>
+              <a href="#sobre-mi">Sobre mí</a>
+              <a href="#proceso">Proceso</a>
+              <a href="#faq">Preguntas frecuentes</a>
+              <a href="#contacto">Contacto</a>
+            </nav>
+          </div>
+
+          <div>
+            <p class="footer__col-title">Contacto</p>
+            <nav class="footer__nav" aria-label="Datos de contacto del pie">
+              <a href="https://wa.me/59170000000" target="_blank" rel="noopener">WhatsApp</a>
+              <a href="mailto:contacto@cgabogados.demo">contacto@cgabogados.demo</a>
+              <a href="#contacto">Formulario de consulta</a>
+            </nav>
+          </div>
         </div>
 
-        <div class="barra">
-          <div class="" id="html"></div>
+        <div class="footer__legal">
+          <span>© 2026 Christian García. Todos los derechos reservados.</span>
+          <span>Sitio demostrativo · Contenido ficticio</span>
         </div>
       </div>
-      <div class="skill">
-        <div class="info">
-          <p><span class="lista"> </span>Litigación</p>
-          <span class="porcentaje">90%</span>
-        </div>
-
-        <div class="barra">
-          <div class="" id="js"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="info">
-          <p><span class="lista"> </span>Derecho Familiar</p>
-          <span class="porcentaje">85%</span>
-        </div>
-
-        <div class="barra">
-          <div class="" id="bd"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SECCION PORTAFOLIO -->
-    <section id="portfolio">
-      <h3 class="titulo-seccion">Mis Casos Recientes</h3>
-      <div class="fila">
-        <div class="proyecto">
-          <div class="overlay"></div>
-          <img src="img/proyecto1.png" alt="" />
-          <div class="info">
-            <h4>Caso Penal</h4>
-            <p>Defensa en Delito de Robo</p>
-          </div>
-        </div>
-        <div class="proyecto">
-          <div class="overlay"></div>
-          <img src="img/proyecto2.jpeg" alt="" />
-          <div class="info">
-            <h4>Caso Familiar</h4>
-            <p>Custodia de Menores</p>
-          </div>
-        </div>
-        <div class="proyecto">
-          <div class="overlay"></div>
-          <img src="img/proyecto3.jpeg" alt="" />
-          <div class="info">
-            <h4>Caso de Derechos Humanos</h4>
-            <p>Violación de Derechos Fundamentales</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECCTION C O N T A C T O -->
-    <section id="contacto">
-      <h3 class="titulo-seccion">Contactanos ahora</h3>
-      <div class="contenedor-form">
-        <form action="">
-          <div class="fila mitad">
-            <input
-              type="text"
-              placeholder="Nombre Completo *"
-              class="input-mitad"
-            />
-            <input
-              type="email"
-              placeholder="Dirección de Email"
-              class="input-mitad"
-            />
-          </div>
-          <div class="fila">
-            <input type="text" placeholder="Tema..." class="input-full" />
-          </div>
-          <div class="fila">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Tu Mensaje..."
-              class="input-full"
-            ></textarea>
-          </div>
-
-          <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
-        </form>
-      </div>
-    </section>
-
-    <!-- SECCION FOOTER -->
-    <footer>
-      <p>&copy; 2023 Christian García. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="main.js" defer></script>
   </body>
 </html>

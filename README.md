@@ -1,65 +1,55 @@
-#### English version
+# Christian García — Abogado Penalista
 
-<div align="center"><strong>CHRISTIAN GARCÍA - Landing Page</strong></div>
-<div align="center">Built with HTML - CSS - JavaScript</div>
-<br />
+Landing page for a (fictional) criminal defense law firm. A frontend showcase built with **vanilla HTML, CSS and JavaScript** — no frameworks, no build step.
 
-## Description
+## Highlights
 
-CHRISTIAN GARCÍA is a personal project developed as part of my portfolio. It is a dynamic and responsive landing page for a law firm website, designed to showcase my front-end development skills using only HTML, CSS, and JavaScript—without relying on frameworks or libraries.
+- **Editorial design system**: color tokens, serif display (Fraunces) + sans body (Inter), fluid type scale with `clamp()`.
+- **Responsive**: from 320px to 1440px, mobile-first, no overflow.
+- **Accessible (WCAG 2.1 AA)**: skip link, semantic landmarks, visible focus, labeled form fields, `prefers-reduced-motion`.
+- **SEO**: meta description, Open Graph/Twitter cards, JSON-LD `Attorney`, favicon.
+- **Performance**: WebP images, no icon fonts (inline SVG), deferred lightweight JS.
+- **Sections**: hero, trust strip, practice areas, about, process, testimonials, FAQ, contact.
 
-## Technologies Used
+## Stack
 
-- Markup - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- Styling - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- Scripting - [Javascript (vanilla)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- HTML5
+- CSS3 (custom properties, Grid, `clamp()`)
+- Vanilla JS (`IntersectionObserver`, accessible nav, form validation)
 
-## Project Purpose
+## Structure
 
-This project was created for learning and showcasing purposes. It demonstrates how a clean, professional, and user-friendly landing page can be built using just core web technologies, with a focus on performance, accessibility, and user experience for a law firm.
+```
+index.html
+styles.css
+main.js
+favicon.svg
+img/
+  fondo-inicio.webp
+  fondo-skills.webp
+  photo.webp
+  photo.png   # fallback
+```
 
-## Live Preview
+## Run locally
 
-You can see the project in action on [Github Pages](https://jordanroberto74.github.io/christian-garcia-abg/).
+Open `index.html` directly, or serve the folder:
+
+```bash
+python -m http.server 8080
+```
+
+Then visit <http://localhost:8080>.
+
+## Live preview
+
+<https://jordanroberto74.github.io/christian-garcia-abg/>
+
+## Notes
+
+- **Demo / fictional content**: name, address, testimonials and stats are illustrative.
+- The contact form is **front-end only**: it validates fields and shows a success state; no backend.
 
 ## Contact
 
-If you would like to learn more about my work or collaborate on future projects, feel free to contact me at jordanroberto74@gmail.com.
-
-Thank you for visiting CHRISTIAN GARCÍA!
-
-<br />
-
----
-
-<br />
-
-#### Versión en español
-
-<div align="center"><strong>CHRISTIAN GARCÍA - Página de aterrizaje</strong></div>
-<div align="center">Construida con HTML - CSS - JavaScript</div>
-<br />
-
-## Descripción
-
-CHRISTIAN GARCÍA es un proyecto personal desarrollado como parte de mi portafolio. Es una landing page dinámica y responsiva para un sitio web de un bufete de abogados, diseñada para demostrar mis habilidades en desarrollo front-end utilizando solo HTML, CSS y JavaScript, sin depender de frameworks ni bibliotecas externas.
-
-## Tecnologías Utilizadas
-
-- Marcado - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- Estilos - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- Scripting - [Javascript (vanilla)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
-## Propósito del Proyecto
-
-Este proyecto fue creado con fines de aprendizaje y demostración. Muestra cómo se puede construir una página de aterrizaje limpia, profesional y amigable para el usuario utilizando solo tecnologías web fundamentales, enfocándose en el rendimiento, la accesibilidad y la experiencia del usuario para un bufete de abogados.
-
-## Vista Previa
-
-Puedes ver el proyecto en funcionamiento en [Github Pages](https://jordanroberto74.github.io/christian-garcia-abg/).
-
-## Contacto
-
-Si deseas conocer más sobre mi trabajo o colaborar en futuros proyectos, puedes contactarme en jordanroberto74@gmail.com.
-
-¡Gracias por visitar CHRISTIAN GARCÍA!
+[jordanroberto74@gmail.com](mailto:jordanroberto74@gmail.com)
